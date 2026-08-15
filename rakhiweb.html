@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rakhi Utsav | Celebrate the Bond of Love</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf5;
+            color: #3b1710;
+        }
+
+        /* NAVBAR */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #8b1e1e;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        .logo {
+            color: #ffd76a;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd76a;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                linear-gradient(rgba(70, 10, 5, 0.70), rgba(70, 10, 5, 0.70)),
+                url("/rakhiwebsite/ChatGPT\ Image\ Aug\ 13\,\ 2026\,\ 10_16_51\ PM.png");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 900px;
+        }
+
+        .hero-content .festival {
+            color: #ffd76a;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffd76a;
+        }
+
+        .hero p {
+            font-size: 21px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd76a;
+            color: #6e1717;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background: white;
+        }
+
+        /* GENERAL */
+        section {
+            padding: 80px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #8b1e1e;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #765b55;
+        }
+
+        /* CATEGORIES */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .category {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(100, 40, 20, 0.12);
+            transition: 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-8px);
+        }
+
+        .category .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .category h3 {
+            color: #8b1e1e;
+            margin-bottom: 8px;
+        }
+
+        /* PRODUCTS */
+        #collection {
+            background: #fff2e5;
+        }
+
+        .products {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(80, 30, 20, 0.12);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-8px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: #8b1e1e;
+            margin-bottom: 8px;
+        }
+
+        .product-info p {
+            color: #765b55;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #c58a00;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        /* TRAND */
+        .trand {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .trand img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .trand-text h1 {
+            font-size: 38px;
+            color: #8b1e1e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .trand-text h2 {
+            font-size: 38px;
+            color: #8b1e1e;
+            margin-bottom: 20px;
+        }
+
+        .trand-text p {
+            line-height: 1.8;
+            color: #654d48;
+            margin-bottom: 15px;
+        }
+
+        /* GALLERY */
+        #gallery {
+            background: #fff2e5;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.04);
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 38px;
+            color: #8b1e1e;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+            color: #654d48;
+            margin-bottom: 15px;
+        }
+
+        /* Location */
+        #location {
+            background: #fff2e5;
+            
+        }
+
+        .location {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            position: relative;
+            height: 500px;
+            align-items: center;
+        }
+
+        .location img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.3s;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .location img:hover {
+            transform: scale(1.04);
+        }
+
+        .location-box{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            position: absolute;
+            background-color: #8b1e1e;
+            margin-bottom: 15px;
+            padding-left:100px;
+            padding-right:100px ;
+            
+        }
+
+        /* FOOTER */
+        footer {
+            background: #4d1111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer .footer-logo {
+            color: #ffd76a;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .categories,
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .trand,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .location-box{
+                height: 200px;
+            }
+            .location img {
+                height: 200px;
+                padding: 20px;
+            }
+            .location{
+                height: 200px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                height: auto;
+                padding: 18px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: 550px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .categories,
+            .products,
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <div class="logo">
+                🏵️ <span>YUAN </span> Rakhi shop
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/rakhiwebsite/collection.html">Collection</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="/rakhiwebsite/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="festival">
+                ✨ RAKHI FESTIVAL 2026 ✨
+            </div>
+
+            <h1>
+                Celebrate the
+                <span>Bond of Love</span>
+            </h1>
+
+            <p>
+                Discover beautiful, traditional and premium Rakhis
+                made to celebrate the special bond between brothers
+                and sisters.
+            </p>
+
+            <a href="#collection" class="btn">
+                Explore Collection
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section>
+
+        <div class="section-title">
+            <h2>Rakhi Categories</h2>
+            <p>Choose the perfect Rakhi for your loved ones</p>
+        </div>
+
+        <div class="categories">
+
+            <div class="category">
+                <div class="icon">🌸</div>
+                <h3>Traditional Rakhi</h3>
+                <p>Beautiful traditional designs.</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">💎</div>
+                <h3>Premium Rakhi</h3>
+                <p>Elegant premium collections.</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">🧿</div>
+                <h3>Bracelet Rakhi</h3>
+                <p>Classic and spiritual designs.</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">👶🏻</div>
+                <h3>kids Rakhi</h3>
+                <p>design with cartoon & toy.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION -->
+    <section id="collection">
+
+        <div class="section-title">
+            <h2>Our Rakhi Collection</h2>
+            <p>Beautiful Rakhis for the special festival</p>
+        </div>
+
+        <div class="products">
+
+            <div class="product">
+
+                <img src="/rakhiwebsite/WhatsApp Image 2026-08-03 at 2.51.21 PM.jpeg">
+
+                <div class="product-info">
+                    <h3>Royal Rakhi</h3>
+                    <p>Elegant festive Rakhi design.</p>
+                    <div class="price">₹149</div>
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="/rakhiwebsite/pri.jpeg">
+
+                <div class="product-info">
+                    <h3>Premium Rakhi</h3>
+                    <p>Premium style for your brother.</p>
+                    <div class="price">₹199</div>
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="/rakhiwebsite/WhatsApp Image 2026-08-14 at 1.34.35 PM.jpeg">
+
+                <div class="product-info">
+                    <h3>Classic Rakhi</h3>
+                    <p>Simple and beautiful festive Rakhi.</p>
+                    <div class="price">₹99</div>
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="/rakhiwebsite/WhatsApp Image 2026-08-03 at 2.55.54 PM.jpeg">
+
+                <div class="product-info">
+                    <h3>Designer Rakhi</h3>
+                    <p>Unique design for a special celebration.</p>
+                    <div class="price">₹249</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- trending -->
+    <section id="Trending">
+
+        <div class="section-title">
+            <h2>Trending Rakhi</h2>
+            <p>Social media Top Trending Rakhi</p>
+        </div>
+    
+        <div class="trand">
+
+            <img src="/rakhiwebsite/rakhi_collection_3x2.jpg">
+
+            <div class="trand-text">
+
+                <h2>kashmiri rakhi</h2>
+
+                <p>
+                    Kashmiri Rakhi features traditional regional craftsmanship
+                    inspired by Kashmiri art, utilizing elements like vibrant 
+                    enamel work, Kundan stones, pearls, and golden ghungroos.
+                </p>
+
+                <p>
+                   Popular variations include reusable bracelet styles, floral 
+                   "Kashmir Ki Kali" tulip designs,colour Sliver ang Golden
+                </p>
+
+                <p>
+                    Make this Raksha Bandhan memorable with a Rakhi
+                    chosen with love.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery">
+
+        <div class="section-title">
+            <h2>Festival Gallery</h2>
+            <p>A glimpse of our beautiful Rakhi collection</p>
+        </div>
+
+        <div class="gallery">
+
+            <img src="/rakhiwebsite/2.jpeg">
+
+            <img src="/rakhiwebsite/4.jpeg">
+
+            <img src="/rakhiwebsite/5.jpeg">
+
+            <img src="/rakhiwebsite/7.jpeg">
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="about">
+
+            <img src="/rakhiwebsite/WhatsApp Image 2026-07-22 at 5.00.05 PM.jpeg">
+
+            <div class="about-text">
+
+                <h2>About Our Rakhi Shop</h2>
+
+                <p>
+                    Welcome to Rakhi Utsav, your destination for
+                    beautiful Rakhis that celebrate the timeless bond
+                    between brothers and sisters.
+                </p>
+
+                <p>
+                    Our collection brings together traditional,
+                    handmade, premium and modern Rakhi designs
+                    for every celebration.
+                </p>
+
+                <p>
+                    Make this Raksha Bandhan memorable with a Rakhi
+                    chosen with love.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>    
+
+    <!-- LOCATION -->
+    <section id="location">
+
+        <div class="section-title">
+            <h2>Location</h2>
+            <p>Shop name Yuan stationery</p>
+        </div>
+        
+        
+        <div class="location">
+            <div class="location-box"></div>
+                <div class="location img">
+                    <a href="https://maps.app.goo.gl/N9ikmDdnqkkJJMeG8" target="_blank"><img src="/rakhiwebsite/Screenshot 2026-08-14 153140.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            🎀 Rakhi Utsav
+        </div>
+
+        <p>
+            Celebrate the Bond of Love ❤️
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 Rakhi Utsav. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function sendMessage(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you! Your message has been received."
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
