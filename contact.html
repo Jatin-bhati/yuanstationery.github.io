@@ -1,0 +1,695 @@
+<!-- CONTACT US SECTION -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-heading">
+        <span>📞 GET IN TOUCH</span>
+        <h2>Contact Our Rakhi Shop</h2>
+        <p>
+            Have a question about our Rakhi collection?
+            Contact us and we will be happy to help.
+        </p>
+    </div>
+
+
+    <div class="contact-container">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-info">
+
+            <div class="contact-logo">
+                🎀 Rakhi Utsav
+            </div>
+
+            <h3>We'd Love to Hear From You ❤️</h3>
+
+            <p class="contact-intro">
+                Visit our shop or contact us for Rakhi
+                collection, availability and festival enquiries.
+            </p>
+
+
+            <!-- ADDRESS -->
+            <div class="contact-item">
+
+                <div class="contact-icon">📍</div>
+
+                <div>
+                    <h4>Shop Address</h4>
+                    <p>
+                        Your Shop Address,<br>
+                        Ajmer, Rajasthan, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+            <div class="contact-item">
+
+                <div class="contact-icon">📞</div>
+
+                <div>
+                    <h4>Phone</h4>
+                    <p>
+                        +91 XXXXX XXXXX
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+            <div class="contact-item">
+
+                <div class="contact-icon">💬</div>
+
+                <div>
+                    <h4>WhatsApp</h4>
+                    <p>
+                        +91 XXXXX XXXXX
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="contact-item">
+
+                <div class="contact-icon">✉️</div>
+
+                <div>
+                    <h4>Email</h4>
+                    <p>
+                        yourshop@email.com
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- OPENING HOURS -->
+            <div class="contact-item">
+
+                <div class="contact-icon">🕒</div>
+
+                <div>
+                    <h4>Opening Hours</h4>
+                    <p>
+                        Monday – Sunday<br>
+                        10:00 AM – 9:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL LINKS -->
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    Instagram
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    Facebook
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+
+            <h3>Send Us a Message</h3>
+
+            <p>
+                Fill out the form below and we'll get back to you.
+            </p>
+
+
+            <form onsubmit="submitContact(event)">
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="What can we help you with?"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="message">
+                        Your Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="send-btn"
+                >
+                    Send Message ✨
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- WHATSAPP BUTTON -->
+    <div class="whatsapp-box">
+
+        <div>
+            <strong>Need a quick response?</strong>
+
+            <p>
+                Chat with us directly on WhatsApp.
+            </p>
+        </div>
+
+        <a
+            href="https://wa.me/91XXXXXXXXXX"
+            target="_blank"
+            class="whatsapp-btn"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT CSS -->
+<style>
+
+    .contact-section {
+        padding: 90px 7%;
+
+        background: #fffaf5;
+    }
+
+
+    /* HEADING */
+
+    .contact-heading {
+        max-width: 750px;
+
+        margin: auto;
+
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+    .contact-heading span {
+        color: #b17800;
+
+        font-weight: bold;
+
+        letter-spacing: 2px;
+    }
+
+    .contact-heading h2 {
+        color: #8b1e1e;
+
+        font-size: 42px;
+
+        margin: 12px 0;
+    }
+
+    .contact-heading p {
+        color: #765b55;
+
+        line-height: 1.7;
+    }
+
+
+    /* MAIN CONTAINER */
+
+    .contact-container {
+        max-width: 1200px;
+
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns: 0.9fr 1.1fr;
+
+        gap: 35px;
+    }
+
+
+    /* CONTACT INFO */
+
+    .contact-info {
+        background: #8b1e1e;
+
+        color: white;
+
+        padding: 40px;
+
+        border-radius: 22px;
+
+        box-shadow:
+            0 12px 35px
+            rgba(80, 30, 20, 0.18);
+    }
+
+    .contact-logo {
+        color: #ffd76a;
+
+        font-size: 27px;
+
+        font-weight: bold;
+
+        margin-bottom: 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 26px;
+
+        margin-bottom: 10px;
+    }
+
+    .contact-intro {
+        color: #f5dddd;
+
+        line-height: 1.6;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* CONTACT ITEMS */
+
+    .contact-item {
+        display: flex;
+
+        gap: 15px;
+
+        margin-bottom: 23px;
+    }
+
+    .contact-icon {
+        width: 45px;
+
+        height: 45px;
+
+        flex-shrink: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background: #ffd76a;
+
+        border-radius: 50%;
+
+        font-size: 20px;
+    }
+
+    .contact-item h4 {
+        color: #ffd76a;
+
+        margin-bottom: 5px;
+    }
+
+    .contact-item p {
+        color: #f5dddd;
+
+        line-height: 1.5;
+
+        font-size: 14px;
+    }
+
+
+    /* SOCIAL */
+
+    .social-links {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        margin-top: 30px;
+    }
+
+    .social-links a {
+        color: white;
+
+        border: 1px solid #d89b9b;
+
+        padding: 9px 15px;
+
+        border-radius: 20px;
+
+        text-decoration: none;
+
+        font-size: 13px;
+
+        transition: 0.3s;
+    }
+
+    .social-links a:hover {
+        background: #ffd76a;
+
+        color: #7e1b1b;
+
+        border-color: #ffd76a;
+    }
+
+
+    /* FORM */
+
+    .contact-form {
+        background: white;
+
+        padding: 40px;
+
+        border-radius: 22px;
+
+        box-shadow:
+            0 8px 30px
+            rgba(80, 30, 20, 0.10);
+    }
+
+    .contact-form h3 {
+        color: #8b1e1e;
+
+        font-size: 27px;
+
+        margin-bottom: 8px;
+    }
+
+    .contact-form > p {
+        color: #765b55;
+
+        margin-bottom: 28px;
+    }
+
+
+    /* FORM ROW */
+
+    .form-row {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 18px;
+    }
+
+    .input-group {
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        display: block;
+
+        color: #54251e;
+
+        font-size: 14px;
+
+        font-weight: bold;
+
+        margin-bottom: 7px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+
+        border: 1px solid #e1d3cc;
+
+        background: #fffaf7;
+
+        border-radius: 10px;
+
+        padding: 14px;
+
+        font-size: 15px;
+
+        font-family: inherit;
+
+        outline: none;
+
+        transition: 0.3s;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #b17800;
+
+        box-shadow:
+            0 0 0 3px
+            rgba(177, 120, 0, 0.10);
+    }
+
+    .input-group textarea {
+        height: 140px;
+
+        resize: vertical;
+    }
+
+
+    /* SEND BUTTON */
+
+    .send-btn {
+        border: none;
+
+        width: 100%;
+
+        padding: 15px;
+
+        background: #8b1e1e;
+
+        color: white;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+
+    .send-btn:hover {
+        background: #b17800;
+
+        transform: translateY(-2px);
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp-box {
+        max-width: 1200px;
+
+        margin: 35px auto 0;
+
+        padding: 25px 30px;
+
+        background: #fff0dc;
+
+        border: 1px solid #ead4bb;
+
+        border-radius: 18px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 20px;
+    }
+
+    .whatsapp-box strong {
+        color: #7e1b1b;
+
+        font-size: 18px;
+    }
+
+    .whatsapp-box p {
+        color: #765b55;
+
+        margin-top: 5px;
+    }
+
+    .whatsapp-btn {
+        background: #168c45;
+
+        color: white;
+
+        padding: 13px 22px;
+
+        border-radius: 25px;
+
+        text-decoration: none;
+
+        font-weight: bold;
+
+        white-space: nowrap;
+
+        transition: 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+        transform: translateY(-3px);
+
+        background: #117238;
+    }
+
+
+    /* TABLET */
+
+    @media (max-width: 900px) {
+
+        .contact-container {
+            grid-template-columns: 1fr;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+        .contact-section {
+            padding: 60px 5%;
+        }
+
+        .contact-heading h2 {
+            font-size: 32px;
+        }
+
+        .contact-info,
+        .contact-form {
+            padding: 25px;
+        }
+
+        .whatsapp-box {
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+        .whatsapp-btn {
+            width: 100%;
+
+            text-align: center;
+        }
+
+    }
+
+</style>
+
+
+<!-- CONTACT JAVASCRIPT -->
+<script>
+
+    function submitContact(event) {
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("name").value;
+
+        alert(
+            "Thank you, " +
+            name +
+            "! Your message has been received. ❤️"
+        );
+
+        event.target.reset();
+
+    }
+
+</script>
